@@ -114,11 +114,6 @@ Contains:
 - 200 ADR Reports (120 from doctors, 80 from pharmacies)
 - 60 Safety Alerts
 
-### Population Script
-To regenerate test data:
-```bash
-python utils/populate_complete_data.py
-```
 
 ## 🛠️ Technology Stack
 
@@ -128,32 +123,6 @@ python utils/populate_complete_data.py
 - **UI Components**: Lucide Icons, Chart.js
 - **Authentication**: Session-based
 
-## 📂 What Was Cleaned Up
-
-**Removed Duplicates:**
-- ❌ Old `backend/` folder (consolidated to root)
-- ❌ Duplicate doctor/hospital/pharmacy HTML folders
-- ❌ Scattered CSS/JS files
-- ❌ Multiple instance folders
-
-**Organized Structure:**
-- ✅ Single `app.py` entry point
-- ✅ Centralized `static/` and `templates/`
-- ✅ Dedicated `utils/` for scripts
-- ✅ `docs/` for documentation
-- ✅ Clean separation from `pv_backend/` (separate system)
-
-## 🔄 Migration Notes
-
-**Old Structure** → **New Structure**
-- `backend/app.py` → `app.py`
-- `backend/static/` → `static/`
-- `backend/templates/` → `templates/`
-- `backend/models.py` → `models.py`
-- `backend/populate_complete_data.py` → `utils/populate_complete_data.py`
-- `backend/*.md` → `docs/*.md`
-
-**All paths updated automatically!** ✨
 
 ## 🎨 Features
 
@@ -164,7 +133,3 @@ python utils/populate_complete_data.py
 - 📱 **Responsive Design** - Works on all devices
 - 🔒 **Secure Authentication** - Session-based login system
 
----
-
-**Last Updated**: January 27, 2026  
-**Version**: 2.0 (Clean & Reorganized)
